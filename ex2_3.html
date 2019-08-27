@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script type= "text/javascript">
+        function prefeitura(){
+            var vet = {}
+            var mediaSalario = Number;
+            var somaSalario = Number;
+            var mediaFilhos = Number;
+            var somaFilho = Number;
+            var maiorSalario = 0;
+            var mulheres = Number;
+            for(i=0;i<3;i++){
+            vet.salario =Number(prompt("Informe seu salario"))
+            vet.idade=Number(prompt("Informe sua idade"))
+            vet.filho=Number(prompt("Informe a quantidade de filhos"))
+            vet.sexo=prompt("Informe o seu sexo, M para masculino, F para feminino")
+            somaSalario = somaSalario + vet[i].salario
+            somaFilho = somaFilho + vet[i].filho
+            if(vet[i].salario > maiorSalario){
+                maiorSalario = vet[i].salrio;
+            }
+            if(vet[i].salario > 1000 && vet[i].sexo == F)
+                mulheres = mulheres + 1;
+            }
+            mediaSalario = somaSalario/3;
+            mediaFilhos = somaFilho/3
+            console.log(vet)
+            console.log("media dos salarios: " + mediaSalario)
+            console.log("media do numero de filhos: "+ mediaFilhos)
+            console.log("Maior salario: "+ maiorSalario)
+            console.log("Numero de mulheres + de 1000: " + mulheres)
+
+            
+        }
+        </script>
+
+    </head>
+    <body>
+        <button onclick="prefeitura()">Calcular</button>
+        <button onclick="pesquisa()">Calcular</button>
+
+    </body>
+</html>
